@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Geoff Stanley</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">About</a></li>			
+			<li><a href="cv.html">CV</a></li>			
+			<li class="current_page_item"><a href="#">Research</a></li>
+			<li><a href="fun.html">Fun</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+
+<h1 align="left">Neutral Surface Topology</h1>
+<table style="width:800px">
+<tr>
+	<td width="47%" valign="top">
+	<p style="text-align:justify"> Most oceanic flows are nearly confined to 2D surfaces, called neutral surfaces, in which no work is done against gravity. Unfortunately, non-linearity in the density of seawater (a function of heat, salt, and pressure) and subtle differences in how heat and salt are distributed prevents the existence of neutral surfaces as well-defined 2D surfaces. Instead, a water parcel moving neutrally---never feeling gravity---and mixing as it goes around the ocean may return to its starting point above or below where it began.  Neutral surfaces possess spirals. Nonetheless, the vertical pitch of these spirals is small, so it is useful to build well-defined 2D surfaces that closely approximate neutral surfaces. These are often an iso-surface of a 3D variable, such as Neutral Density (Jackett and McDougall, 1997) or Orthobaric Density (de Szoeke et al., 2000). </p>
+	
+	<br>
+
+	<p style="text-align:justify">Topology gives us a far deeper understanding of neutral surfaces. The key is to study the connected components of level sets of pressure on a neutral surface. This entire structure is encoded in the <b>Reeb graph</b> (Reeb, 1946), illustrated at right. Nodes represent critical points of the pressure on the surface. An arc between two nodes represents a path on the surface that is monotonic in pressure and connects the two critical points, plus all pressure contours intersecting that path. 
+	I use <a href="http://vgl.csa.iisc.ac.in/software/software.php?pid=003">ReCon</a> to compute the Reeb graph on oceanic data (<a href="http://www.ecco-group.org/products.htm">OCCA and ECCO2</a>). 
+	Below (panel a), I show the <i>in-situ</i> density and pressure (heat and salt could equally well be shown) on an approximately neutral surface. The pressure is shown in (b), the Reeb graph in (c), and the regions corresponding to each arc in (d). The <i>in-situ</i> density is (very nearly) a multivalued function of pressure. 
+	The Reeb graph finds regions within which this becomes single-valued. </p>
+
+	<br>
+
+	<p style="text-align:justify"> I've invented new approximately neutral surfaces, called <b>topobaric surfaces</b>, that exploit this multivalued functional relationship. They possess the best theoretical properties of Orthobaric Density, while the geographic dependence (a feature shared with Neutral Density) enables them to be extremely close to neutral. </p>
+
+	<p>As a corollary to this theory, the <b>the exact geostrophic streamfunction for neutral surfaces</b> is derived.  McDougall (1989) proved this geostrophic streamfunction must exist, but its expression had remained elusive.  Topobaric surfaces also (with a minor modification) possess an exact geostrophic streamfunction of the same form. </p>
+	<!---
+	<p>Data used: <a href="http://www.ecco-group.org/products.htm">OCCA and ECCO2</a>.</p>
+	<p>Software used: <a href="http://vgl.csa.iisc.ac.in/software/software.php?pid=003">ReCon</a>.</p>
+	-->
+	<p> <i><a href="https://www.sciencedirect.com/science/article/pii/S1463500318302221">Stanley, G.J., 2019a. Neutral surface topology. Ocean Modelling S1463500318302221.</a></i>. </p>
+
+	<p> <i><a href="https://www.sciencedirect.com/science/article/pii/S1463500318302233">Stanley, G.J., 2019b. The exact geostrophic streamfunction for neutral surfaces. Ocean Modelling S1463500318302233.</a></i>. </p>
+
+		<!--
+	<p> The density of seawater is a non-linear function of its temperature, salinity, and pressure. This non-linearity makes it impossible to define a conservative density variable, that is a </p>
+	-->
+	</td>
+
+	<td width="3%"></td>
+
+	<td width="50%" valign="center"><img style="width: 400px;" alt="Photo" src="images/schematic.001.jpeg">
+	<br><br><br>
+	</td>
+</tr>
+</table>
+
+<br><br>
+
+<tr>
+	<img style="width: 800px;" alt="Photo" src="images/illustrative_OMEGA1000_(180,00,996).jpg">
+</tr>
+
+<br><br><br>
+<h1 align="left">Rossby shock waves in the Southern Ocean</h1>
+<p style="text-align:justify"> Geophysical turbulence is rampant in the Antartic Circumpolar Current, which at any time is populated by hundreds of mesoscale eddies. Understanding this turbulence is crucial to understanding the large-scale climate of the Southern Ocean. Borrowing ideas from studies of Jupiter, Saturn, Mars, and Earth's atmosphere, this project estimates a "Mach number" for Rossby waves in the Southern Ocean. When this "Mach number" between 0 and 1, Rossby waves may travel upstream, and can coordinate to lock their phase with each other, amplifying one another and leading to turbulence. When this "Mach number" is negative (a possibility for uni-directional waves) or greater than 1, the Rossby waves travel downstream and are ripped apart from one another, unable to generate turbulence; these cases are the two branches of Arnol'd's stability theorems. With <a href="http://sose.ucsd.edu/">SOSE</a> data, we calculated the inverse "Mach number" (1 / "Ma") on an orthobaric density surfaces, using a novel method to estimate the Rossby wave phase speed on such surfaces. An example is shown in the figure below. Note, 1 / "Ma" is less than 1 for the two stable cases.  The Antarctic Circumpolar Current shows a rich structure near "Ma" = 1, suggestive of the onset of shear instability itself. </p>
+<p>Work with <a href="http://louisville.edu/atmosphericscience/faculty-staff/dr.-timothy-dowling">Tim Dowling</a>, <a href="https://scholar.google.com/citations?user=-e0VgS8AAAAJ&hl=en">Beth Bradley</a>, and <a href="http://www.marshallocean.net/">David Marshall</a>: <i>manuscript submitted to JPO</i>.</p>
+<img style="width:800px;" alt="Photo" src="images/map_invMa_obd27.30_t090_M8_di3,dj2.jpg">
+
+
+<br><br><br>
+<h1 align="left">Potential vorticity non-conservation in the Antarctic Circumpolar Current</h1>
+<p style="text-align:justify"> Potential vorticity: a GFD'ers best friend. As a materially conserved quantity, PV is the cornerstone of many great theories of oceanic and atmospheric circulation, including some of the ACC.  This project studies the climatological (from <a href="http://sose.ucsd.edu/">SOSE</a>) potential vorticity along climatological streamlines in the ACC. We find a massive drop in PV downstream of Drake Passage, a smaller drop downstream of Campbell Plateau, and compensatory gains elsewhere. So, in the time-mean, PV is far from conserved in the eddy-rich ACC. Rather, eddy fluxes and mean advection modifies the PV, in largely but not perfectly compensatory ways. The subtle imbalance, together with more minor terms, creates the rich PV structure of the Southern Ocean. The figure below shows climatological Ekman pumping velocity (purple/orange) and streamlines coloured by the relative potential vorticity change along each streamline (blue/red).
+</p>
+<p> Work with <a href="http://www.marshallocean.net/">David Marshall</a>: <i>manuscript in preparation</i>.</p>
+<img style="width: 800px;" alt="Photo" src="images/Wekman,_PV_relchange_EUL_GEO_i0=800_j0=144,_z0=-1000.jpg">
+
+
+<br><br><br>
+<h1 align="left">The edge of turbulence</h1>
+<table>
+<tr>
+	<td width="47%" valign="top">
+	<p style="text-align:justify"> Turbulent fluid flows are ubiquitous; the turbulence is sometimes useful, sometimes damaging, and usually mysterious. Viewing the Navier-Stokes equations as a <b>dynamical system</b> has led to considerable progress. 
+	Exact and unstable solutions to the 3D Navier-Stokes equations are being found.
+	These solutions are equilibrium points and periodic orbits, from which emerge stable and unstable manifolds that intertwine and entagle phase space. Turbulence can be thought of as a walk between these unstable solutions.
+	The "edge" of turbulence is that which is just beyond all those states of the fluid that eventually return to the basic laminar flow (i.e. the basin of attraction of the laminar fixed point). 
+	The "minimal seed" of turbulence is the fluid state on the edge with minimal energy. It is the easiest way to kick the laminar flow so that it becomes turbulent.</p>
+
+	<br>
+	<p style="text-align:justify">This project uses non-linear optimization (Kerswell et al, 2014) to find the minimal seed in a <a href="http://www.math.wisc.edu/~waleffe/ECS/SSP.html">4D dynamical system</a> that is an analogue to turbulence in plane flow. Previous results (Cossu 2005) found a "strong edge" minimal seed for flow that remains turbulent for all time. We discover a "weak edge" minimal seed (having less "energy") for flow that grows non-linearly, visits an unstable equilibrium, then eventually relaminarizes. We find this minimal seed scales roughly as the inverse of the Reynolds number. 
+	</p>
+
+	<p> The figure shows (colour and vertical axis) the "energy" of the 4D system after a long simulation, initialized with the fourth variable ("W") fixed and with a fixed amount of energy (hence two dimensions remain, the horizontal axes). This particular initialization energy is well beyond the edge of turbulence. </p>
+	<p>Work with <a href="http://people.cs.uchicago.edu/~lebovitz/">Norm Lebovitz</a>: <i>manuscript in preparation</i>.</p>
+	</td>
+
+	<td width="3%"></td>
+
+	<td width="50%" valign="center"><img style="width: 400px;" alt="Photo" src="images/Re=150__E0=0p77169__W=1p410e-01_white_bigfont.png"></td>
+</tr>
+</table>
+
+<br><br><br>
+<h1 align="left">Abyssal overturning circulation</h1>
+<table style="width:800px">
+<tr>
+	<td width="47%" valign="top">
+	<p style="text-align:justify"> This project explored a new parameterization of diapycnal ("vertical") mixing related to parameterized mesoscale eddy activity in coarse-resolution ocean general circulation models. The most common eddy parameterization (Gent-McWilliams) allows a certain amount of energy to disappear. In reality, some of this energy probably cascades to the small-scale and supports diapycnal mixing, likely via internal lee waves generated by flow over topography. We implemented this in the <a href="http://climate.uvic.ca/model/">UVic model</a> (using <a href="https://www.gfdl.noaa.gov/mom-ocean-model/">MOM</a>), and found drastic changes in the simulated abyssal meridional overturning circulation (MOC; shown at right for the the control case in latitude-density space).  Previous theoretical and modelling studies predicted the abyssal MOC should weaken under stronger southern hemisphere westerly winds (which is expected under 21st century anthropogenic climate change). However, stronger westerlies increase eddy activity in the Southern Ocean, which, through this energy pathway, actually <i>strengthens</i> the abyssal MOC. This has significant implications for long-term climate feedbacks. </p>
+	<!-- 
+	The abyssal MOC <i>responds</i> differently to changes in the surface wid-stress.
+	Much remains unknown about the cascade of energy between the oceanic large-, meso-, and small-scales. 
+	
+	<p><a href="https://journals.ametsoc.org/doi/10.1175/JPO-D-13-0116.1">Stanley and Saenko (2014)</a></p>
+	<p>Collaboration with <a href="https://scholar.google.com/citations?user=OpHvuGkAAAAJ&hl=en">Oleg Saenko</a>. </p>
+    -->
+	<p>Work with <a href="https://scholar.google.com/citations?user=OpHvuGkAAAAJ&hl=en">Oleg Saenko</a>:  <i><a href="https://journals.ametsoc.org/doi/10.1175/JPO-D-13-0116.1">published</a></i>. </p>
+	</td>
+
+	<td width="3%"></td>
+
+	<td width="50%" valign="center"><img style="width: 400px;" alt="Photo" src="images/Over_deep_qbl0_control_thick_anti.jpg">
+	</td>
+</tr>
+</table>
+
+
+
+<br><br><br><br><br><br>
+
+<h2>References</h2>
+<br>
+
+<p> Cossu, C. An optimality condition on the minimum energy threshold in subcritical instabilities. Comptes Rendus Mécanique 333, 331–336 (2005).</p><br>
+
+<p>de Szoeke, R. A., Springer, S. R. &amp; Oxilia, D. M. Orthobaric density: A thermodynamic variable for ocean circulation studies. Journal of physical oceanography 30, 2830–2852 (2000).</p><br>
+
+<p>Jackett, D. R. &amp; McDougall, T. J. A neutral density variable for the world’s oceans. Journal of Physical Oceanography 27, 237–263 (1997).</p><br>
+
+<p>Kerswell, R. R., Pringle, C. C. T. &amp; Willis, A. P. An optimization approach for analysing nonlinear stability with transition to turbulence in fluids as an exemplar. Reports on Progress in Physics 77, 085901 (2014).</p><br>
+
+<p>McDougall, T. J. Streamfunctions for the lateral velocity vector in a compressible ocean. Journal of Marine Research 47, 267–284 (1989).</p><br>
+
+<p>Reeb, G. Sur les points singuliers d’une forme de Pfaff completement intégrable ou d’une fonction numérique. CR Acad. Sci. Paris 222, 2 (1946).</p><br>
+
+<!--
+<p>Gille, S. T. Why potential vorticity is not conserved along mean streamlines in a numerical Southern Ocean. Journal of physical oceanography 27, 1286–1299 (1997).</p><br>
+
+<p>Stanley, G. J. &amp; Saenko, O. A. Bottom-Enhanced Diapycnal Mixing Driven by Mesoscale Eddies: Sensitivity to Wind Energy Supply. Journal of Physical Oceanography 44, 68–85 (2014).</p><br>
+-->
+
+
+
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+<!--			<div class="post">
+			</div> -->
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+			<div class="signature">
+				<p>Last updated May 2019</p>
+			</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<!-- end #footer -->
+</body>
+</html>
